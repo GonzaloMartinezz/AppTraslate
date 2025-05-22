@@ -63,9 +63,7 @@ export async function translateText(text, sourceLanguage, targetLanguage) {
   return `${prefix}${text}`
 }
 
-// In a real application, you would implement these functions to call an actual translation API
-// Example with a hypothetical API:
-/*
+
 export async function translateText(text, sourceLanguage, targetLanguage) {
   const response = await fetch('https://api.translation-service.com/translate', {
     method: 'POST',
@@ -83,4 +81,4 @@ export async function translateText(text, sourceLanguage, targetLanguage) {
   const data = await response.json();
   return data.translatedText;
 }
-*/
+

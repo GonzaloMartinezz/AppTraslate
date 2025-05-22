@@ -14,15 +14,10 @@ const translateText = async (text, sourceLanguage, targetLanguage) => {
   // Simulate API delay
   await new Promise((resolve) => setTimeout(resolve, 800))
 
-  // In a real app, you would call a translation API here
-  // For demo purposes, we'll just append some text based on the target language
-
-  // If source and target are the same, return the original text
   if (sourceLanguage === targetLanguage) {
     return text
   }
 
-  // Simple mock translations for demonstration
   const mockTranslations = {
     en: {
       es: "Traducción al español: ",
